@@ -1,22 +1,40 @@
 body {
-    margin: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
 
+.card {
+    background-color: #FF525E;
+    width: 300px;
+    height: 280px;
+    border-radius: 5px;
+}
+
 .container-image {
     height: 270px;
-    width: 300px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #989898 110%), url("img/background-photo.jpg") no-repeat center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #989898 100%), url("img/background-photo.jpg") no-repeat center;
     background-size: 402px 270px;
     display: flex;
     align-items: flex-end;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.container-image:hover {
+    filter: opacity(.2);
+}
+
+.container-image:hover .container-titles {
+    opacity: 0;
 }
 
 .container-titles {
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
+
+/* typography */
 
 .title-lg {
     font-size: 24px;
