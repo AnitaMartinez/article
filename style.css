@@ -1,4 +1,5 @@
 body {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
@@ -13,9 +14,16 @@ body {
 
 .container-image {
     height: 270px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), to(#989898)), url("img/background-photo.jpg") no-repeat center;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, #989898 100%), url("img/background-photo.jpg") no-repeat center;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, #989898 100%), url("img/background-photo.jpg") no-repeat center;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #989898 100%), url("img/background-photo.jpg") no-repeat center;
     background-size: 402px 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -30,15 +38,23 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     opacity: 0;
 }
 
 .button {
-    background: none;
     font-family: inherit;
     font-size: 20px;
     color: #4A4A4A;
@@ -79,4 +95,3 @@ body {
     margin: 0;
     font-style: italic;
 }
-
